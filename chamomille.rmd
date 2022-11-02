@@ -10,7 +10,34 @@ Hello World
 Eat more beans!
 
 ```{r, eval=TRUE}
-## insert your brilliant WORKING code here
+# library
+library(ggplot2)
+
+# Stacked density plot:
+p <- ggplot(data=diamonds, aes(x=price, group=cut, fill=cut)) +
+    geom_density(adjust=1.5, position="fill") +
+    theme_ipsum()
+#p
+```
+
+```{r, eval=TRUE}
+# library
+library(ggridges)
+library(ggplot2)
+library(viridis)
+library(hrbrthemes)
+
+# Plot
+ggplot(lincoln_weather, aes(x = `Mean Temperature [F]`, y = `Month`, fill = ..x..)) +
+  geom_density_ridges_gradient(scale = 3, rel_min_height = 0.01) +
+  scale_fill_viridis(name = "Temp. [F]", option = "C") +
+  labs(title = 'Temperatures in Lincoln NE in 2016') +
+  theme_ipsum() +
+    theme(
+      legend.position="none",
+      panel.spacing = unit(0.1, "lines"),
+      strip.text.x = element_text(size = 8)
+    )
 ```
 
 THere is no working code.
