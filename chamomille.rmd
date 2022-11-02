@@ -1,11 +1,12 @@
 ---
-title: "Very Interesting Document"
+title: "First draft of Rstudio report"
 author: "Robert"
 date: "2022-10-31"
 output: github_document
 # this line doesn't create HTML as output in files window
 # Then one cannot post HMTL to GitHub for easy 
 
+# this line creates HTML as output in files window
 #output:
 #  html_document:
 #    keep_md: true
