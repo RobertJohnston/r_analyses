@@ -44,13 +44,15 @@ Density Plot
 ```{r, eval=TRUE}
 # library
 library(ggplot2)
+library(dplyr)
 
 # Stacked density plot:
 p <- ggplot(data=diamonds, aes(x=price, group=cut, fill=cut)) +
-    geom_density(adjust=1.5, position="fill") +
-    theme_ipsum()
+    geom_density(adjust=1.5, position="fill") 
 #p
 ```
+
+Ridge Lines
 
 ```{r, eval=TRUE}
 # library
