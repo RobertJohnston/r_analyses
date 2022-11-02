@@ -24,6 +24,24 @@ sqrt(81)
 9^2
 ```
 
+Simple graph
+
+```{r, eval=TRUE}
+#install ggplot2
+install.packages("ggplot2")
+
+#load ggplot2
+library(ggplot2)
+
+#create data frame
+df <- data.frame(x=c(1, 2, 4, 5, 7, 8, 9, 10),
+                 y=c(12, 17, 27, 39, 50, 57, 66, 80))
+
+#create scatterplot of x vs. y
+ggplot(df, aes(x=x, y=y)) +
+  geom_point()
+```
+
 Density Plot
 
 ```{r, eval=TRUE}
