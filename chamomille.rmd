@@ -11,22 +11,17 @@ Eat more beans!
 
 ```{r, eval=TRUE}
 # Addition
-> 7+3
-
+7+3
 # Subtraction
-> 7-3
-
+7-3
 # Multiplication
-> 8*7
-
+8*7
 #Division
-> 100/50
-
+100/50
 # Square root
-> sqrt(81)
-
+sqrt(81)
 # Exponents
-> 9^2
+9^2
 ```
 
 Density Plot
