@@ -45,10 +45,12 @@ Density Plot
 # library
 library(ggplot2)
 library(dplyr)
+library(hrbrthemes)
 
 # Stacked density plot:
 p <- ggplot(data=diamonds, aes(x=price, group=cut, fill=cut)) +
-    geom_density(adjust=1.5, position="fill") 
+    geom_density(adjust=1.5, position="fill") +
+    theme_ipsum() 
 #p
 ```
 
