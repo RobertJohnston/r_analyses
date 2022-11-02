@@ -27,9 +27,6 @@ sqrt(81)
 Simple graph
 
 ```{r, eval=TRUE}
-#install ggplot2
-install.packages("ggplot2")
-
 #load ggplot2
 library(ggplot2)
 
