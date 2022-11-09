@@ -11,6 +11,7 @@ What is .YAML ?
 The YAML metadata seen at the top of RMarkdown files is specifically to pass options to rmarkdown::render, to guide the build process.
 
 What is .Rproj ?
+When a new project is created RStudio: Creates a project file (with an . Rproj extension) within the project directory. This file contains various project options and can also be used as a shortcut for opening the project directly from the filesystem
 
 Create a repository on GitHub
 https://happygitwithr.com/existing-github-first.html 
@@ -20,7 +21,7 @@ foo.Rmd --> foo.md --> foo.html
 
 In many cases, you only want the markdown. In that case, we switch the output format to github_document. This means rendering look like this: foo.Rmd --> foo.md where foo.md is GitHub-flavored markdown. 
 
-If you still want the HTML but also the intermediate markdown, add to YAML
+If you still want the HTML but also the intermediate markdown, add to YAML to the top of the .Rmd file
 ---
 title: "Something fascinating"
 author: "Jenny Bryan"
@@ -29,3 +30,31 @@ output:
   html_document:
     keep_md: true
 ---
+
+Detecting errors in the .Rmd file (code)
+https://happygitwithr.com/rmd-test-drive.html
+
+
+
+Transform the R markdown to R:
+
+    Anything that’s not R code? Like the YAML and the prose? Protect it with roxygen-style comments: start each line with #'.
+
+    Anything that is R code? Let it exist “as is” as top-level code. That means you’ll need to change the syntax of R chunk headers like so:
+
+    Before: ```{r setup, include = FALSE}
+    After: #+ r setup, include = FALSE
+
+    Replace the leading backticks and opening curly brace with #+.
+    Delete the trailing curly brace.
+    Delete the 3 backticks that end each chunk.
+
+Render the R script through one of these methods:
+
+    Click on the “notebook” icon in RStudio to “Compile Report”.
+    In RStudio, do File > Knit Document.
+    In R, do rmarkdown::render("foo.R").
+
+You’ll get a markdown and/or HTML report, just as with R Markdown.
+
+MORE help
