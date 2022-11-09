@@ -1,5 +1,8 @@
 Production of code for R and RStudio
 
+New project GitHub first
+https://happygitwithr.com/new-github-first.html
+
 What is .md ? 
 Markdown is a lightweight markup language with plain text formatting syntax designed so that it can be converted to HTML and many other formats. A markdown file is a plain text file that is typically given the extension .md.Like other markup languages like HTML and Latex, it is completely independent from R.
 
