@@ -2,11 +2,16 @@ Production of code for R and RStudio
 
 What is .md ? 
 Markdown is a lightweight markup language with plain text formatting syntax designed so that it can be converted to HTML and many other formats. A markdown file is a plain text file that is typically given the extension .md.Like other markup languages like HTML and Latex, it is completely independent from R.
+.md files can be previewed as HTML, but the R code is not run. 
 
 What is .rmd ? 
-R Markdown is a file format for making dynamic documents with R. An R Markdown document is written in markdown (an easy-to-write plain text format) and contains chunks of embedded R code
+R Markdown is a file format for making dynamic documents with R. An R Markdown document is written in markdown (an easy-to-write plain text format) and contains chunks of embedded R code. 
+.Rmd files can be knitted as HTML, with the R code run and output produced. 
 
 What is .YAML ? 
 The YAML metadata seen at the top of RMarkdown files is specifically to pass options to rmarkdown::render, to guide the build process.
 
 What is .Rproj ?
+
+Create a repository on GitHub
+https://happygitwithr.com/existing-github-first.html 
